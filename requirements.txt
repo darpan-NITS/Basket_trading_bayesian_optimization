@@ -1,7 +1,7 @@
-pandas>=2.0
-numpy>=1.24
-matplotlib>=3.7
-seaborn>=0.12
-yfinance>=0.2.36
-statsmodels>=0.14
-scikit-optimize>=0.9.0
+pandas==2.3.3
+numpy==2.0.2
+matplotlib==3.10.0
+seaborn==0.13.2
+yfinance==0.2.66
+statsmodels==0.14.6
+skopt==0.10.2
