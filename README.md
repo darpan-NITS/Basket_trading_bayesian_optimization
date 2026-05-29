@@ -103,7 +103,7 @@ testing.
 
 ## How to reproduce
 
-1. Open the [Kaggle notebook]([https://www.kaggle.com/your-username/your-notebook-link](https://www.kaggle.com/code/darpanjyotigoswami/basket-trading-bayesian-optimization))
+1. Open the [Kaggle notebook](https://www.kaggle.com/code/darpanjyotigoswami/basket-trading-bayesian-optimization)
 2. Click **Run All**
 3. All outputs and plots are generated automatically
 
@@ -128,4 +128,4 @@ jupyter notebook notebooks/basket_trading_bo.ipynb
 ## Author
 
 **Darpan Jyoti Goswami** — 2nd year B.Tech EIE, NIT Silchar  
-[GitHub](https://github.com/darpan-NITS) · [Kaggle]([https://www.kaggle.com/your-username](https://www.kaggle.com/darpanjyotigoswami))
+[GitHub](https://github.com/darpan-NITS) · [Kaggle](https://www.kaggle.com/darpanjyotigoswami)
