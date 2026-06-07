@@ -94,8 +94,8 @@ testing.
 - [x] Phase 0 — Environment setup and repo structure
 - [x] Phase 1 — Concept study (cointegration, Johansen test, Bayesian Optimization)
 - [x] Phase 2 — Data collection, EDA, stationarity tests
-- [ ] Phase 3 — Johansen baseline strategy and backtest
-- [ ] Phase 4 — Bayesian Optimization for weight search
+- [x] Phase 3 — Johansen baseline strategy and backtest
+- [x] Phase 4 — Bayesian Optimization for weight search
 - [ ] Phase 5 — Rolling window evaluation and comparison
 - [ ] Phase 6 — Final writeup and visualizations
 
