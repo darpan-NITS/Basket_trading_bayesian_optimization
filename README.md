@@ -1,8 +1,4 @@
-KAGGLE_URL  = "(https://www.kaggle.com/code/darpanjyotigoswami/basket-trading-bayesian-optimization)" 
-GITHUB_USER = "darpan-NITS"                                  
-YOUR_NAME   = "Darpan Jyoti Goswami"                                             
-
-readme = f"""# Improving Basket Trading Using Bayesian Optimization
+# Improving Basket Trading Using Bayesian Optimization
 
 A quantitative finance project that investigates whether **Bayesian Optimization (BO)**
 can find cointegrating weights that outperform the Johansen test in out-of-sample
@@ -13,8 +9,8 @@ basket trading performance.
 > The statistically-grounded Johansen weights generalise more robustly.
 > BO does however consistently achieve lower maximum drawdown.
 
-[![Kaggle](https://img.shields.io/badge/Notebook-Kaggle-blue)]({{KAGGLE_URL}})
-[![GitHub](https://img.shields.io/badge/Repo-GitHub-black)](https://github.com/{{GITHUB_USER}}/basket-trading-bayesian-optimization)
+[![Kaggle](https://img.shields.io/badge/Notebook-Kaggle-blue)](https://www.kaggle.com/code/darpanjyotigoswami/basket-trading-bayesian-optimization)
+[![GitHub](https://img.shields.io/badge/Repo-GitHub-black)](https://github.com/darpan-NITS/basket-trading-bayesian-optimization)
 
 ---
 
@@ -75,7 +71,7 @@ consistent with a cointegrated basket:
 | Metric | Train (2018–2021) | Test (2022–2023) |
 |--------|------------------|-----------------|
 | Sharpe ratio | 1.124 | 1.075 |
-| Max drawdown | −3.451 | −1.325 |
+| Max drawdown | -3.451 | -1.325 |
 | Profit factor | 1.451 | 1.361 |
 
 ---
@@ -136,38 +132,40 @@ meaningful advantage in risk-controlled strategies.
 - **Constrained search space**: initialise BO at the Johansen solution and
   restrict search to a neighbourhood, combining statistical grounding with
   optimisation fine-tuning
-
+  
 ---
 
 ## Project structure
+
+```text
 basket-trading-bayesian-optimization/
 │
 ├── notebooks/
-│   └── basket_trading_bo.ipynb   ← full notebook (run on Kaggle)
+│   └── basket_trading_bo.ipynb
 │
 ├── src/
 │   └── utils.py
 │
 ├── data/
-│   └── README.md                 ← data regeneration instructions
+│   └── README.md
 │
 ├── results/
-│   └── plots/                    ← all generated charts
+│   └── plots/
 │
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Reproduce
 
-Open the [Kaggle notebook]({KAGGLE_URL}) and click **Run All**.
+Open the [Kaggle notebook](https://www.kaggle.com/code/darpanjyotigoswami/basket-trading-bayesian-optimization) and click **Run All**.
 All outputs are generated automatically from Yahoo Finance data.
 
 Or locally:
 ```bash
-git clone https://github.com/{GITHUB_USER}/basket-trading-bayesian-optimization
+git clone https://github.com/darpan-NITS/basket-trading-bayesian-optimization
 cd basket-trading-bayesian-optimization
 pip install -r requirements.txt
 jupyter notebook notebooks/basket_trading_bo.ipynb
@@ -180,18 +178,13 @@ jupyter notebook notebooks/basket_trading_bo.ipynb
 - [Bayesian Optimization in Trading — Towards Data Science](https://medium.com/data-science/bayesian-optimization-in-trading-77202ffed530)
 - Johansen, S. (1991). Estimation and Hypothesis Testing of Cointegration
   Vectors in Gaussian Vector Autoregressive Models. *Econometrica*, 59(6).
-- Head, T. et al. *Scikit-optimize*. https://scikit-optimize.github.io
+- Head, T. et al. *Scikit-optimize*. <https://scikit-optimize.github.io>
 
 ---
 
 ## Author
 
-**{YOUR_NAME}** — 2nd year B.Tech EIE, NIT Silchar
-[GitHub](https://github.com/{GITHUB_USER}) · [Kaggle]({KAGGLE_URL})
-"""
+**Darpan Jyoti Goswami** — 2nd year B.Tech EIE, NIT Silchar
+[GitHub](https://github.com/darpan-NITS) · [Kaggle](https://www.kaggle.com/code/darpanjyotigoswami/basket-trading-bayesian-optimization)
 
-with open(f"{REPO_PATH}/README.md", "w") as f:
-    f.write(readme)
 
-print("README.md written successfully.")
-print(f"Length: {len(readme)} characters, {len(readme.splitlines())} lines")
